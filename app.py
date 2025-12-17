@@ -19,7 +19,11 @@ st.markdown("""
 with st.sidebar:
     st.title("Settings")
     api_key = st.text_input("Enter Google API Key", type="password")
-
+    # Helpful link for the judges
+    st.markdown("[Get a free Gemini API key here](https://aistudio.google.com/app/apikey)")
+    
+    st.markdown("---")
+    st.markdown("**Note for Judges:**\nThis app requires an API key to prevent quota exhaustion. Please use your own key to test.")
 # --- 3. MAIN APP ---
 st.markdown('<p class="main-header">💊 Medi-Lingo: The Patient Advocate</p>', unsafe_allow_html=True)
 st.write("Upload a photo of a medicine strip to understand its usage in Hindi.")
@@ -82,3 +86,4 @@ if uploaded_file is not None:
 
                 except Exception as e:
                     st.error(f"Error: {e}")
+
