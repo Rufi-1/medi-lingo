@@ -45,7 +45,7 @@ if uploaded_file is not None:
                     # Configure Gemini
                     genai.configure(api_key=api_key)
                     # Use standard stable model
-                    model = genai.GenerativeModel('gemini-1.5-flash')
+                    model = genai.GenerativeModel('gemini-2.5-flash')
 
                     # The Golden Prompt (Same as you tested)
                     prompt = """
@@ -111,4 +111,5 @@ if uploaded_file is not None:
                     st.audio(audio_url, format='audio/mp3')
 
                 except Exception as e:
+
                     st.error(f"An error occurred: {e}")
