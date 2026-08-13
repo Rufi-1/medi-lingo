@@ -13,3 +13,4 @@ Medical reports and terminology are often difficult for patients to understand, 
 
 ## 🛠️ Tech Stack
 Python · SQL · Gemini API · Streamlit
+Hindi text & speech output (gTTS or equivalent)
